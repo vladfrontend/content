@@ -63,7 +63,7 @@ given image. These are iterated over and the barcode data is logged to the conso
 ```js
 barcodeDetector.detect(imageEl)
   .then((barcodes) => {
-    barcodes.forEach((barcode) => console.log(barcode.rawData));
+    barcodes.forEach((barcode) => console.log(barcode.rawValue));
   })
   .catch((err) => {
     console.error(err);
